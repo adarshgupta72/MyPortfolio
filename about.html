@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adarsh Kumar Gupta - Portfolio</title>
+  <style>
+    /* ====== GLOBAL STYLES ====== */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #fff7e6, #ffe8b3, #fff1cc);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    h2 {
+      margin: 0;
+      font-weight: 600;
+    }
+
+    /* ====== ABOUT SECTION ====== */
+    #about {
+      padding: 80px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Subtle glowing saffron orbs */
+    #about::before {
+      content: "";
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 250px;
+      height: 250px;
+      background: radial-gradient(circle, rgba(255, 166, 0, 0.18), transparent 70%);
+      z-index: 0;
+      filter: blur(20px);
+    }
+
+    #about::after {
+      content: "";
+      position: absolute;
+      bottom: -100px;
+      left: -100px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(255, 193, 7, 0.15), transparent 70%);
+      z-index: 0;
+      filter: blur(25px);
+    }
+
+    .about-container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1100px;
+      margin: auto;
+      align-items: center;
+      gap: 40px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ====== IMAGE SECTION ====== */
+    .about-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .about-image img {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.15);
+      border: 4px solid #fff;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .about-image img:hover {
+      transform: scale(1.07);
+      box-shadow: 0px 15px 35px rgba(255, 145, 0, 0.4);
+    }
+
+    /* ====== TEXT SECTION ====== */
+    .about-text {
+      flex: 2;
+      font-size: 1rem;
+      color: #4a3b00;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease;
+    }
+
+    .about-text:hover {
+      transform: translateY(-4px);
+    }
+
+    .about-text h2 {
+      font-size: 2.2rem;
+      margin-bottom: 15px;
+      color: #e69500;
+      position: relative;
+    }
+
+    .about-text h2::after {
+      content: "";
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 80px;
+      height: 3px;
+      background: #ffb84d;
+      border-radius: 2px;
+    }
+
+    .about-text p {
+      margin-bottom: 15px;
+      line-height: 1.8;
+    }
+
+    /* ====== SKILLS GRID ====== */
+    .about-skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 12px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .about-skills span {
+      background: linear-gradient(135deg, #ffb84d, #ff9800);
+      padding: 10px 15px;
+      border-radius: 10px;
+      text-align: center;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.5px;
+      box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .about-skills span:hover {
+      transform: translateY(-4px);
+      background: linear-gradient(135deg, #ffc107, #ff8c00);
+      box-shadow: 0 8px 20px rgba(255, 172, 0, 0.4);
+    }
+
+    /* ====== BUTTON ====== */
+    .about-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #ffb84d, #ff9800);
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(255, 152, 0, 0.25);
+    }
+
+    .about-btn:hover {
+      background: linear-gradient(135deg, #ffc107, #ff8c00);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(255, 153, 0, 0.35);
+    }
+
+    /* ====== RESPONSIVE ====== */
+    @media (max-width: 768px) {
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .about-text {
+        padding: 20px;
+      }
+
+      .about-text h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- ====== ABOUT SECTION ====== -->
+  <section id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="Adarsh pic.jpg" alt="Adarsh Kumar Gupta" />
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>Hi, I'm <strong>Adarsh Kumar Gupta</strong> 👋</p>
+        <p>
+          I’m passionate about building interactive and dynamic web applications.
+          With expertise in <strong>React, JavaScript, and Python</strong>, I focus on
+          merging creative design with technical excellence.
+        </p>
+        <p>Here are some of my core skills:</p>
+
+        <div class="about-skills">
+          <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          <span>React</span><span>Python</span><span>C++</span>
+          <span>SQL</span><span>Oracle</span>
+        </div>
+
+        <p>
+          <strong>Achievements:</strong> 🏆 Tech Expo Award (PSIT) |
+          💻 Solved 50+ HackerRank Problems
+        </p>
+
+        <!-- <a href="adarsh%20resume.pdf" class="about-btn" download>📄 Download Resume</a> -->
+      </div>
+    </div>
+  </section>
+</body>
+</html>

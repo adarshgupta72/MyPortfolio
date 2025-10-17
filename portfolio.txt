@@ -1,0 +1,53 @@
+✅ Step 1: Plan Your Website
+
+Before you start coding, plan the sections of your website.
+
+🎯 Recommended Sections:
+
+Home – Your name, photo, and a short introduction.
+
+About Me – Education, skills, career goal.
+
+Projects – List of mini and major projects with links and descriptions.
+
+Resume – Downloadable PDF or online resume.
+
+Contact – Email, LinkedIn, GitHub, and maybe a contact form.
+
+Step 4: Host It Online for Free (GitHub Pages)
+1. Create GitHub Repository
+
+Go to GitHub
+
+Create a repo named like portfolio
+
+2. Push your website files:
+git init
+git add .
+git commit -m "Initial portfolio"
+git branch -M main
+git remote add origin https://github.com/yourusername/portfolio.git
+git push -u origin main
+
+
+3. Enable GitHub Pages
+
+Go to repo Settings → Pages
+
+Choose branch: main and /root
+
+Your site will be live at: 
+https://yourusername.github.io/portfolio/
+
+
+Bonus: Use Free Templates
+
+If you don’t want to design from scratch, use free HTML templates:
+
+HTML5 UP
+
+Start Bootstrap
+
+TemplateMo
+
+Just download a template → replace content → deploy to GitHub Pages.
